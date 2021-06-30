@@ -11,12 +11,12 @@ else {
 
 // Event Listener para Offline/ Online Status
 window.addEventListener('offline', event => {
-  document.querySelector('body').classList.add('offline');
+    document.querySelector('body').classList.add('alert-danger');
   main.innerHTML = "No obtener los partidos! La aplicacion esta offline!"
 });
 
 window.addEventListener('online', event => {
-  document.querySelector('body').classList.remove('offline');
+    document.querySelector('body').classList.remove('alert-danger');
   openSoccerApi();
 });
 
@@ -26,6 +26,6 @@ window.addEventListener('online', event => {
 // 
 
 if (!navigator.onLine) {
-  document.querySelector('body').classList.add('offline');
+  document.querySelector('body').classList.add('alert-danger');
   main.innerHTML = "No obtener los partidos! La aplicacion esta offline!"
 }
