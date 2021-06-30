@@ -1,13 +1,10 @@
-const URL = 'https://api.jikan.moe/v3/anime';
+const URL = 'https://api.jikan.moe/v3';
 
 async function pageLoaded(){
     try{
-        const response = await fetch('https://api.jikan.moe/v3/anime');
-        if(response.status == 200){
-            return response.json();
-        }else{
-            console.log("fallo la peticion 1")
-        }
+        const response = await fetch(`${URL}/search/anime?q=naruto&page=1`)
+            .then(res => res.json())
+            .then(data => console.log(data))
         console.log(await response.text());
     }catch (err){
         console.log("Fallo la petición 2", err);
