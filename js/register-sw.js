@@ -12,11 +12,13 @@ else {
 // Event Listener para Offline/ Online Status
 window.addEventListener('offline', event => {
     document.querySelector('body').classList.add('alert-danger');
-  main.innerHTML = "No obtener los partidos! La aplicacion esta offline!"
+    var main = document.querySelector('.main > div');
+  main.innerHTML = "Lá aplicacion esta OFF-ONLINE, por favor conecte de nuevo su internet!."
 });
 
 window.addEventListener('online', event => {
     document.querySelector('body').classList.remove('alert-danger');
+    location.href = 'index.html';
 });
 
 // A veces este evento falla, ojo!
@@ -26,5 +28,5 @@ window.addEventListener('online', event => {
 
 if (!navigator.onLine) {
   document.querySelector('body').classList.add('alert-danger');
-  main.innerHTML = "No obtener los partidos! La aplicacion esta offline!"
+  main.innerHTML = "Lá aplicacion esta OFF-ONLINE, por favor conecte de nuevo su internet!."
 }
