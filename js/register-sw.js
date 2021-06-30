@@ -1,6 +1,6 @@
 // Chequeo si el browser puede usar Service Worker
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('../service-worker.js')
+  navigator.serviceWorker.register('./service-worker.js')
       .then(reg => {
         console.log("Service worker esta listo!");
       });
@@ -17,7 +17,6 @@ window.addEventListener('offline', event => {
 
 window.addEventListener('online', event => {
     document.querySelector('body').classList.remove('alert-danger');
-  openSoccerApi();
 });
 
 // A veces este evento falla, ojo!
