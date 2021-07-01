@@ -42,7 +42,7 @@ function updateDom(data){
 
         return `
                 <section>
-                    <h3>${key.toUpperCase()}</h3>
+                    <h3 class="col-12">${key.toUpperCase()}</h3>
                     <div class="row">${animesHTML}</div>
                 </section>
             `
