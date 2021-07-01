@@ -1,21 +1,64 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Albert Villarroel DWN3A PWA TP2</title>
+    <link rel="shortcut icon" type="image/ico" href="img/plan.ico"/>
+    <link rel="manifest" href="manifest.json">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
 
-    <title>Hello, world!</title>
+    <title>Albert Villarroel DWN3A PWA TP2</title>
+    <style>
+      body{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      canvas{
+        box-shadow: black 20px 10px 50px;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="alert-danger">Estoy Offline y el cache fallo!</h1>
-
-    <script src="js/register-sw.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <header class="header">
+    <div class="container">
+      <h1 id="logo">Play Anime</h1>
+      <div class="row">
+        <nav class="col navbar navbar-expand-md navbar-light">
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="barra">
+            <ul class="navbar-nav text-center ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" data-ancla="true">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="animes.html" data-ancla="true">Animes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="main" style="padding: 2em 0">
+    <h1>Bro estamos OFFLINE</h1>
+    <p>Pero matemos el tiempo jugando un poco!! LETS GO</p>
+    <p>Juga con las flechitas ←↑→↓</p>
+    <canvas id="game" width="400" height="400"/>
+  </section>
+    <footer id="footer">
+      <div class="container mx-auto py-2 text-center">
+        <p>Footer echo con love with beto</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
