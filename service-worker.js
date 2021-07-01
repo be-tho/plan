@@ -1,5 +1,5 @@
 // Nombre del Cache
-const cacheName = 'cache-version-10';
+const cacheName = 'cache-version-11';
 
 // Archivos/Recursos que vamos a "cachear"
 const precache = [
@@ -9,6 +9,8 @@ const precache = [
     './offline.html',
     './css/bootstrap.css',
     './css/estilo.css',
+    'index.js',
+    'gulp.mp3',
 ];
 
 
