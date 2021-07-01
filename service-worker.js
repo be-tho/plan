@@ -1,5 +1,5 @@
 // Nombre del Cache
-const cacheName = 'cache-version-3';
+const cacheName = 'cache-version-5';
 
 // Archivos/Recursos que vamos a "cachear"
 const precache = [
