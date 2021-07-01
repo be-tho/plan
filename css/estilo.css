@@ -29,6 +29,16 @@ body{
     text-transform: uppercase;
     margin-bottom: 0.5em;
 }
+.main__contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    width: 350px;
+}
+#main__art section{
+    width: 100%;
+}
 strong{
     color: #313131;
 }
@@ -68,4 +78,27 @@ strong{
 }
 .card{
     border-radius: 15px;
+}
+
+/* ARTICLE */
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    margin: auto;
+}
+.article__h2 > a{
+    font-size: 26px;
+    color: #333;
+}
+.article img{
+    width: 100%;
+}
+.container {
+    max-width: 1300px !important;
+}
+.main__contenido-articles{
+    background: #ffffff;
 }

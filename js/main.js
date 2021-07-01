@@ -34,7 +34,7 @@ function updateDom(data){
                             <div class="card-body">
                                 <h5 class="card-title">${anime.title}</h5>
                                 <p class="card-text">${anime.synopsis}</p>
-                                <a href="${anime.image_url}" class="btn btn-primary">Go somewhere</a>
+                                <a href="${anime.image_url}" class="btn btn-primary">Mirar más</a>
                             </div>
                     </div>`
             }).join("");
