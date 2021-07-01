@@ -14,7 +14,7 @@ else {
 window.addEventListener('offline', event => {
     document.querySelector('body').classList.add('alert-danger');
     var main = document.querySelector('.main > div');
-  main.innerHTML = "Lá aplicacion esta OFF-ONLINE, por favor conecte de nuevo su internet!."
+    window.location.href = "offline.html";
 });
 
 window.addEventListener('online', event => {
