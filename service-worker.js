@@ -1,9 +1,9 @@
 // Nombre del Cache
-const cacheName = 'cache-version-1';
+const cacheName = 'cache-version-3';
 
 // Archivos/Recursos que vamos a "cachear"
 const precache = [
-    './js/regisrwe-sw.js',
+    './js/register-sw.js',
     './index.html',
     './animes.html',
     './offline.html',
